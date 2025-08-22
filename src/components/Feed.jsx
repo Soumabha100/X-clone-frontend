@@ -6,7 +6,7 @@ import axios from "axios";
 import { setTweets } from "../redux/tweetSlice";
 import TweetSkeleton from "./TweetSkeleton";
 
-const API_BASE_URL = "http://localhost:8000/api/v1";
+const API_BASE_URL = "https://x-clone-api-soumabha.onrender.com/api/v1";
 
 /**
  * The Feed component is the main content area of the application.

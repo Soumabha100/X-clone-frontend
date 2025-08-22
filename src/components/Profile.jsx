@@ -9,7 +9,7 @@ import Tweet from "./Tweet";
 import { setUser } from "../redux/userSlice";
 import EditProfileModal from "./EditProfileModal"; // Ensure this is imported
 
-const API_BASE_URL = "http://localhost:8000/api/v1";
+const API_BASE_URL = "https://x-clone-api-soumabha.onrender.com/api/v1";
 
 const Profile = () => {
   const [profile, setProfile] = useState(null);

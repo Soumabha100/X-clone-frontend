@@ -6,7 +6,7 @@ import toast, { Toaster } from "react-hot-toast";
 import { useDispatch } from "react-redux";
 import { setUser } from "../redux/userSlice";
 
-const API_BASE_URL = "http://localhost:8000/api/v1";
+const API_BASE_URL = "https://x-clone-api-soumabha.onrender.com/api/v1";
 
 // An array of engaging messages to display during the authentication process.
 const loadingMessages = [
