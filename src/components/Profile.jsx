@@ -64,7 +64,7 @@ const Profile = () => {
       }
     };
     fetchProfileAndTweets();
-  }, [profileUserId, loggedInUser]); // Updated dependency to loggedInUser for re-fetching on profile edits
+  }, [profileUserId]);
 
   if (!profile) {
     return (
