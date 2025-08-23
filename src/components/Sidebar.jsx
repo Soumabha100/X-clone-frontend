@@ -15,7 +15,7 @@ import LogoutModal from "./LogoutModal";
 import { setUnreadCount } from "../redux/notificationSlice";
 
 // Use your Vercel URL for the deployed version
-const API_BASE_URL = "https://x-clone-api-soumabha.onrender.com/api/v1";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
 /**
  * The Sidebar component provides the main navigation for the application.
