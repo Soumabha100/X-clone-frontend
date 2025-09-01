@@ -3,7 +3,9 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Home";
 import Login from "./Login";
 import LoadingOverlay from "./LoadingOverlay";
-import TweetSkeleton from "./TweetSkeleton"; // Import a skeleton loader
+import TweetSkeleton from "./TweetSkeleton";
+import ForgotPassword from "./ForgotPassword"; 
+import ResetPassword from "./ResetPassword"; 
 
 // Lazy load the components
 const Feed = lazy(() => import("./Feed"));
@@ -85,6 +87,14 @@ const Body = () => {
           <Premium />
         </Suspense>
       ),
+    },
+    {
+      path: "/forgot-password",
+      element: <ForgotPassword />,
+    },
+    {
+      path: "/reset-password/:token",
+      element: <ResetPassword />,
     },
   ]);
 
