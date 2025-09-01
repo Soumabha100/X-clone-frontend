@@ -9,7 +9,7 @@ import Tweet from "./Tweet";
 import { setUser } from "../redux/userSlice";
 import EditProfileModal from "./EditProfileModal"; // Ensure this is imported
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+const API_BASE_URL = "/api/v1";
 
 const Profile = () => {
   const [profile, setProfile] = useState(null);

@@ -18,7 +18,7 @@ import EditTweetModal from "./EditTweetModal";
 import CommentModal from "./CommentModal";
 import { setUser } from "../redux/userSlice";
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+const API_BASE_URL = "/api/v1";
 
 const Tweet = memo(({ tweet }) => {
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
