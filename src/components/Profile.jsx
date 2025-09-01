@@ -94,8 +94,12 @@ const Profile = () => {
           </div>
           <img
             src={
-              profile.bannerImg ||
-              "https://placehold.co/600x200/1DA1F2/FFFFFF?text=Banner"
+              profile.bannerImg
+                ? profile.bannerImg.replace(
+                    "/upload/",
+                    "/upload/w_600,f_auto,q_auto/"
+                  )
+                : "https://placehold.co/600x200/1DA1F2/FFFFFF?text=Banner"
             }
             alt="banner"
             className="w-full h-48 object-cover"
