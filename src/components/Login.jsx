@@ -208,6 +208,14 @@ const Login = () => {
               className="px-4 py-3 my-2 bg-transparent border border-gray-700 rounded-md focus:outline-none focus:border-blue-500"
               required
             />
+            <div className="text-right mt-2">
+              <Link
+                to="/forgot-password"
+                className="text-sm text-blue-500 hover:underline"
+              >
+                Forgot Password?
+              </Link>
+            </div>
             <button
               type="submit"
               className={`px-4 py-3 my-4 text-lg font-bold text-white bg-blue-500 rounded-full hover:bg-blue-600 transition-colors duration-200 ${
